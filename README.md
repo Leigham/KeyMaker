@@ -38,7 +38,11 @@ to the bottom of your description.ext
 6, copy what is in the fn_selfactions edit, to the verybottom of your fn_selfactions file. 
 
 7, If you want to stop the spam coming from unkown variable s_maker_dialog add    CTRL+ in your editor and search for dayz_resetSelfActions = {  paste it just below.
+
+
 						s_maker_dialog = -1;
+						
+						
 to the reset self actions part of your variables.sqf.
 
 8, To make all this easier, you should be using either Notepad++ or Atom. they both have SEARCH functions to make things easier by CTRL+F 
