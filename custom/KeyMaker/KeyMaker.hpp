@@ -146,7 +146,7 @@ class KeyMakerLega {
 				colorBackground[] = {0.2,0.75,1,1};
 				colorText[] = {1,1,1,1};
 				tooltip = "Exit the Menu"; //--- ToDo: Localize;
-				onbuttonclick = closeDisplay 7459;
+				onbuttonclick = "((ctrlParent (_this select 0)) closeDisplay 7459);";
 			};
 			class Lega_Create_Key: RscButton
 			{
