@@ -80,7 +80,7 @@ if (lega_KeySingleCurrency) then {
 } else {
 	Player playActionnow "Medic";
 	Sleep 7;
-	player removeWeapon Lega_KeyCost;
+	player removeMagazine Lega_KeyCost;
 };
 systemChat format ["Key Making Completed, please check your toolbelt, %1 Taken from Cash",Lega_KeyCost];
 	   
