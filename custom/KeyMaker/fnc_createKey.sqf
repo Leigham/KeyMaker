@@ -28,7 +28,7 @@ _hasKey = _KeyClassname in items Player;
 
  if(_haskey)exitwith{systemchat format ["You already have a %1.",_keySelected];};
 if (lega_KeySingleCurrency) then {
-	_PlayerCash = player getVariable ["cashMoney",0];
+	_PlayerCash = player getVariable [Z_moneyVariable,0];
 	_gotMoney = if(_PlayerCash < Lega_KeyCost) then {false} else {true};
 }else{
 	_hasCost = Lega_KeyCost in (items Player);
@@ -76,7 +76,7 @@ if !(_isOK) exitWith {systemchat format ["Key %1 Could not be added to toolbelt,
 if (lega_KeySingleCurrency) then {
 	Player playActionnow "Medic";
 	Sleep 7;
-	player setVariable ["cashMoney",_PlayerCash - Lega_KeyCost, true]; 
+	player setVariable [Z_moneyVariable,_PlayerCash - Lega_KeyCost, true]; 
 } else {
 	Player playActionnow "Medic";
 	Sleep 7;
